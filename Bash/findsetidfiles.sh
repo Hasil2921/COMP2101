@@ -20,6 +20,10 @@ echo "============="
 find / -type f -executable -perm -4000 -ls 2>/dev/null | sort -k 5
 echo ""
 
+echo ""
+echo "Diplaying Files with sizes and owner names"
+echo "============="
+find / 2>/dev/null -type f -exec ls -l --block-size=M {} + | sort -k 5 -rn | head -n 12
 # for the task, add
 # commands to display a title
 # commands to make a list of the 12 biggest files

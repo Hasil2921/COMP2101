@@ -22,7 +22,6 @@ counter=4
 # TASK 1: Test the user input to make sure it is not blank
 # TASK 2: Test the user input to make sure it is a number from 1 to 10 inclusive
 # TASK 3: Tell the user if their guess is too low, or too high after each incorrect guess
-
 while [ $counter -gt 0 ]; do
   read -p "Give number from 1-10: "
   counter=$((counter-1))
